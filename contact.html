@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — David García Ramírez</title>
+  <meta name="description" content="Contacta con David García Ramírez. Disponible para colaboraciones, proyectos freelance y oportunidades profesionales.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto — David García Ramírez">
+  <meta property="og:description" content="¿Tienes un proyecto en mente? Hablemos.">
+  <meta property="og:image" content="img/ImagenPerfil.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/ImagenPerfil.jpg" type="image/jpeg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+  <!-- Particles Background -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav-bar" id="main-nav" aria-label="Navegación principal">
+    <a class="nav-logo" href="index.html">DGR<span style="color: var(--accent-cyan);">_</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="reveal" style="margin-bottom: var(--space-3xl);">
+        <p class="mono-text" style="margin-bottom: var(--space-sm);">// contacto</p>
+        <h1 class="section-title gradient-text">Hablemos</h1>
+        <p class="section-subtitle">¿Tienes un proyecto en mente, una propuesta o simplemente quieres conectar? Estaré encantado de escucharte.</p>
+      </div>
+
+      <!-- Contact Grid -->
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="glass-card reveal" style="padding: var(--space-2xl);">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject" placeholder="¿De qué quieres hablar?">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto o idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="submit-btn" style="width: 100%; justify-content: center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="reveal reveal-delay-2">
+          <div class="contact-info-list">
+            <!-- Email -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h3>Email</h3>
+                <!-- EDITAR: Tu email real -->
+                <p><a href="mailto:tu-email@example.com">tu-email@example.com</a></p>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon" style="background: rgba(255, 0, 229, 0.15); color: var(--accent-magenta);">
+                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/degarram" target="_blank" rel="noopener noreferrer">github.com/degarram</a></p>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon" style="background: rgba(123, 45, 255, 0.15); color: var(--accent-violet);">
+                <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h3>LinkedIn</h3>
+                <!-- EDITAR: Tu LinkedIn -->
+                <p><a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/tu-perfil</a></p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h3>Ubicación</h3>
+                <!-- EDITAR: Tu ubicación -->
+                <p>España 🇪🇸</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links Extra -->
+          <div style="margin-top: var(--space-3xl); padding: var(--space-xl); border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+            <h3 style="font-size: var(--fs-body); margin-bottom: var(--space-md);">Conectemos</h3>
+            <p style="color: var(--text-secondary); font-size: var(--fs-small); margin-bottom: var(--space-lg);">
+              También puedes encontrarme en estas plataformas:
+            </p>
+            <div style="display: flex; gap: var(--space-md);">
+              <a href="https://github.com/degarram" target="_blank" rel="noopener noreferrer" class="btn-outline" style="padding: 0.5rem 1rem; font-size: var(--fs-xs);">GitHub</a>
+              <!-- EDITAR: Añade más redes -->
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline" style="padding: 0.5rem 1rem; font-size: var(--fs-xs);">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; 2024 <span>David García Ramírez</span>. Hecho con 💻 y ☕
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/degarram" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
