@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos — David García Ramírez</title>
+  <meta name="description" content="Proyectos destacados de David García Ramírez. Aplicaciones web, APIs y soluciones creativas con Python, Java, React y más.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Proyectos — David García Ramírez">
+  <meta property="og:description" content="Proyectos destacados de desarrollo web full stack.">
+  <meta property="og:image" content="img/ImagenPerfil.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/ImagenPerfil.jpg" type="image/jpeg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Project placeholder images via CSS -->
+  <style>
+    .project-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+    }
+    .project-placeholder.style-1 {
+      background: linear-gradient(135deg, #0a0a2e 0%, #1a0a3e 50%, #0a1a2e 100%);
+    }
+    .project-placeholder.style-1::before {
+      background: repeating-linear-gradient(
+        0deg, transparent, transparent 40px,
+        rgba(0, 245, 255, 0.03) 40px, rgba(0, 245, 255, 0.03) 41px
+      ),
+      repeating-linear-gradient(
+        90deg, transparent, transparent 40px,
+        rgba(0, 245, 255, 0.03) 40px, rgba(0, 245, 255, 0.03) 41px
+      );
+    }
+    .project-placeholder.style-2 {
+      background: linear-gradient(135deg, #1a0a28 0%, #2a0a38 50%, #1a0a28 100%);
+    }
+    .project-placeholder.style-2::before {
+      background: radial-gradient(circle at 30% 50%, rgba(255, 0, 229, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 50%, rgba(123, 45, 255, 0.1) 0%, transparent 50%);
+      opacity: 1;
+    }
+    .project-placeholder.style-3 {
+      background: linear-gradient(135deg, #0a1520 0%, #0a0a2e 50%, #150a20 100%);
+    }
+    .project-placeholder.style-3::before {
+      background: conic-gradient(from 45deg at 50% 50%, transparent 0deg, rgba(0, 245, 255, 0.05) 90deg, transparent 180deg, rgba(123, 45, 255, 0.05) 270deg, transparent 360deg);
+      opacity: 1;
+    }
+    .project-placeholder.style-4 {
+      background: linear-gradient(180deg, #0a0a1a 0%, #151525 50%, #0a0a1a 100%);
+    }
+    .project-placeholder.style-4::before {
+      background: repeating-linear-gradient(
+        45deg, transparent, transparent 20px,
+        rgba(0, 245, 255, 0.02) 20px, rgba(0, 245, 255, 0.02) 21px
+      );
+    }
+    .project-placeholder-icon {
+      position: relative;
+      z-index: 1;
+      filter: grayscale(0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Particles Background -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav-bar" id="main-nav" aria-label="Navegación principal">
+    <a class="nav-logo" href="index.html">DGR<span style="color: var(--accent-cyan);">_</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="reveal" style="margin-bottom: var(--space-2xl);">
+        <p class="mono-text" style="margin-bottom: var(--space-sm);">// proyectos</p>
+        <h1 class="section-title gradient-text">Proyectos Destacados</h1>
+        <p class="section-subtitle">Una selección de los proyectos en los que he trabajado. Cada uno representa un desafío único resuelto con código.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="nodejs">Node.js</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- EDITAR: Reemplaza los proyectos placeholder con los tuyos -->
+
+        <!-- Proyecto 1 -->
+        <div class="glass-card project-card reveal" data-tags="react,nodejs,sql">
+          <div class="project-image">
+            <div class="project-placeholder style-1">
+              <span class="project-placeholder-icon">📊</span>
+            </div>
+            <div class="project-overlay">
+              <!-- EDITAR: Añade tus links reales -->
+              <a href="#" class="btn-primary" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer">Código</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Dashboard Analytics</h3>
+            <p>Panel de control interactivo con visualización de datos en tiempo real, gráficos dinámicos y filtros avanzados.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="glass-card project-card reveal reveal-delay-1" data-tags="python,sql">
+          <div class="project-image">
+            <div class="project-placeholder style-2">
+              <span class="project-placeholder-icon">🤖</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn-primary" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer">Código</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>API REST Automatizada</h3>
+            <p>API robusta con autenticación JWT, documentación automática con Swagger y tests unitarios completos.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="glass-card project-card reveal reveal-delay-2" data-tags="java,sql">
+          <div class="project-image">
+            <div class="project-placeholder style-3">
+              <span class="project-placeholder-icon">🏗️</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn-primary" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer">Código</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Microservicios E-Commerce</h3>
+            <p>Arquitectura de microservicios con Spring Boot, gestión de pedidos, inventario y pagos integrados.</p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="glass-card project-card reveal reveal-delay-3" data-tags="react,nodejs">
+          <div class="project-image">
+            <div class="project-placeholder style-4">
+              <span class="project-placeholder-icon">💬</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn-primary" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="#" class="btn-outline" target="_blank" rel="noopener noreferrer">Código</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Chat en Tiempo Real</h3>
+            <p>Aplicación de mensajería instantánea con WebSockets, salas de chat, notificaciones y autenticación de usuarios.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIN EDITAR -->
+
+      </div>
+
+      <!-- CTA -->
+      <div class="reveal" style="text-align: center; margin-top: var(--space-3xl);">
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">¿Quieres ver más? Visita mi GitHub para explorar todos mis repositorios.</p>
+        <a href="https://github.com/degarram" class="btn-outline" target="_blank" rel="noopener noreferrer" id="github-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          Ver GitHub completo
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; 2024 <span>David García Ramírez</span>. Hecho con 💻 y ☕
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/degarram" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habilidades — David García Ramírez</title>
+  <meta name="description" content="Stack tecnológico de David García Ramírez: Python, Java/Spring, Node.js, React, HTML/CSS/JS, SQL y más.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Habilidades — David García Ramírez">
+  <meta property="og:description" content="Stack tecnológico completo: Frontend, Backend y Bases de datos.">
+  <meta property="og:image" content="img/ImagenPerfil.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/ImagenPerfil.jpg" type="image/jpeg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+  <!-- Particles Background -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav-bar" id="main-nav" aria-label="Navegación principal">
+    <a class="nav-logo" href="index.html">DGR<span style="color: var(--accent-cyan);">_</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="reveal" style="margin-bottom: var(--space-3xl);">
+        <p class="mono-text" style="margin-bottom: var(--space-sm);">// habilidades</p>
+        <h1 class="section-title gradient-text">Stack Tecnológico</h1>
+        <p class="section-subtitle">Las tecnologías y herramientas que utilizo para convertir ideas en realidad.</p>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skill-category reveal">
+        <h2 class="skill-category-title">&#60;/&#62; Frontend</h2>
+        <div class="skills-grid">
+          <div class="glass-card skill-card reveal reveal-delay-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy">
+            <h3>HTML5</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 95%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy">
+            <h3>CSS3</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 90%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-3">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 85%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy">
+            <h3>React</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-category reveal">
+        <h2 class="skill-category-title">{ } Backend</h2>
+        <div class="skills-grid">
+          <div class="glass-card skill-card reveal reveal-delay-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy">
+            <h3>Python</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 90%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy">
+            <h3>Java</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 85%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-3">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" loading="lazy">
+            <h3>Spring</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 80%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy">
+            <h3>Node.js</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database & Tools -->
+      <div class="skill-category reveal">
+        <h2 class="skill-category-title">🗄 Bases de datos & Herramientas</h2>
+        <div class="skills-grid">
+          <div class="glass-card skill-card reveal reveal-delay-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" loading="lazy">
+            <h3>SQL</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 85%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy">
+            <h3>Git</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 85%"></div>
+            </div>
+          </div>
+          <!-- EDITAR: Añade más tecnologías aquí -->
+          <div class="glass-card skill-card reveal reveal-delay-3">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
+            <h3>Docker</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 70%"></div>
+            </div>
+          </div>
+          <div class="glass-card skill-card reveal reveal-delay-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" loading="lazy">
+            <h3>Linux</h3>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--level: 75%"></div>
+            </div>
+          </div>
+          <!-- FIN EDITAR -->
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="reveal" style="text-align: center; margin-top: var(--space-3xl);">
+        <p style="color: var(--text-secondary); margin-bottom: var(--space-lg);">¿Quieres ver estas tecnologías en acción?</p>
+        <a href="projects.html" class="btn-primary" id="skills-cta">Ver mis proyectos →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; 2024 <span>David García Ramírez</span>. Hecho con 💻 y ☕
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/degarram" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

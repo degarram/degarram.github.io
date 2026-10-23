@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí — David García Ramírez</title>
+  <meta name="description" content="Conoce a David García Ramírez, Desarrollador Full Stack apasionado por crear soluciones web innovadoras con Python, Java, Node.js y React.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sobre mí — David García Ramírez">
+  <meta property="og:description" content="Conoce a David García Ramírez, Desarrollador Full Stack.">
+  <meta property="og:image" content="img/ImagenPerfil.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/ImagenPerfil.jpg" type="image/jpeg">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+  <!-- Particles Background -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav-bar" id="main-nav" aria-label="Navegación principal">
+    <a class="nav-logo" href="index.html">DGR<span style="color: var(--accent-cyan);">_</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="contact.html">Contacto</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="reveal" style="margin-bottom: var(--space-3xl);">
+        <p class="mono-text" style="margin-bottom: var(--space-sm);">// sobre-mi</p>
+        <h1 class="section-title gradient-text">Sobre mí</h1>
+        <p class="section-subtitle">Un poco más sobre quién soy, mi trayectoria y lo que me apasiona.</p>
+      </div>
+
+      <!-- About Grid -->
+      <div class="about-grid">
+        <!-- Photo -->
+        <div class="about-image-wrapper reveal">
+          <img src="img/ImagenPerfil.jpg" alt="David García Ramírez" class="about-image">
+        </div>
+
+        <!-- Bio -->
+        <div class="about-text reveal reveal-delay-2">
+          <h2>David García Ramírez</h2>
+          <p class="mono-text" style="margin-bottom: var(--space-lg);">Desarrollador Full Stack</p>
+
+          <!-- EDITAR: Personaliza tu bio aquí -->
+          <p>
+            Soy un desarrollador apasionado por crear soluciones web innovadoras y funcionales.
+            Con experiencia tanto en desarrollo front-end como back-end, disfruto convirtiendo ideas
+            en aplicaciones reales que resuelven problemas del mundo real.
+          </p>
+          <p>
+            Mi enfoque combina la creatividad del diseño con la lógica del desarrollo backend,
+            permitiéndome construir productos completos desde la base de datos hasta la interfaz de usuario.
+            Me motiva aprender constantemente nuevas tecnologías y enfrentar desafíos técnicos complejos.
+          </p>
+          <p>
+            Cuando no estoy programando, me gusta explorar nuevas tecnologías, contribuir a proyectos
+            open source y compartir conocimientos con la comunidad de desarrolladores.
+          </p>
+          <!-- FIN EDITAR -->
+
+          <!-- Stats -->
+          <div class="about-stats">
+            <!-- EDITAR: Actualiza los números -->
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Tecnologías</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Motivación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <section class="section reveal" id="timeline">
+        <p class="mono-text" style="margin-bottom: var(--space-sm);">// trayectoria</p>
+        <h2 class="section-title">Experiencia & Educación</h2>
+        <p class="section-subtitle">Mi recorrido profesional y académico.</p>
+
+        <div class="timeline">
+          <!-- EDITAR: Añade tu experiencia real aquí -->
+          <div class="timeline-item reveal">
+            <span class="timeline-date">2024 — Presente</span>
+            <h3 class="timeline-title">Desarrollador Full Stack</h3>
+            <p class="timeline-subtitle">Tu Empresa / Freelance</p>
+            <p class="timeline-description">
+              Desarrollo de aplicaciones web completas utilizando tecnologías modernas.
+              Implementación de APIs REST, interfaces responsivas y bases de datos optimizadas.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-1">
+            <span class="timeline-date">2022 — 2024</span>
+            <h3 class="timeline-title">Formación en Desarrollo Web</h3>
+            <p class="timeline-subtitle">Tu Centro de Estudios</p>
+            <p class="timeline-description">
+              Formación intensiva en desarrollo web full stack, cubriendo HTML/CSS/JS,
+              frameworks frontend y backend, bases de datos y buenas prácticas de desarrollo.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-2">
+            <span class="timeline-date">2020 — 2022</span>
+            <h3 class="timeline-title">Inicio en Programación</h3>
+            <p class="timeline-subtitle">Autodidacta</p>
+            <p class="timeline-description">
+              Primeros pasos en el mundo de la programación, aprendiendo fundamentos
+              de lógica, algoritmos y lenguajes de programación.
+            </p>
+          </div>
+          <!-- FIN EDITAR -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; 2024 <span>David García Ramírez</span>. Hecho con 💻 y ☕
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/degarram" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
